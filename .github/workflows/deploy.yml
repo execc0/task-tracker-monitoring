@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /opt/monitoring
+            cd /opt/task-tracker-monitoring
             git pull origin main
             docker compose up -d --build
 
